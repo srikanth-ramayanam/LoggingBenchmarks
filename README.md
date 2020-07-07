@@ -9,6 +9,6 @@ LoggerMessage provides the following performance advantages over Logger extensio
 Logger extension methods require "boxing" (converting) value types, such as int, into object. The LoggerMessage pattern avoids boxing by using static Action fields and extension methods with strongly-typed parameters.
 Logger extension methods must parse the message template (named format string) every time a log message is written. LoggerMessage only requires parsing a template once when the message is defined.
 
-references
+References
 1. https://docs.microsoft.com/en-us/aspnet/core/fundamentals/logging/loggermessage?view=aspnetcore-3.1
 2. https://github.com/dotnet/BenchmarkDotNet
